@@ -1,0 +1,309 @@
+*
+{
+    border: 0;
+padding: 0;
+margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+html,body
+{
+    height: 100vh;
+    margin: 0px;
+    /* overflow: hidden; */
+}
+
+.box
+{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #333;
+}
+.split
+{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.split.left
+{
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-start;
+    left: 0;
+    background: url('/assets/dcd3073c98ff580bba2f810ed79b9d02.jpg') center/ cover no-repeat;
+}
+.split.right
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    background: url('/assets/dean-bennett-nFjLHE4vmn4-unsplash.jpg') center/ cover no-repeat;
+}
+.split.left::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--left-bg-color);
+}
+
+.split.right::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color);
+}
+h1
+{
+    font-size: 3rem;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space:nowrap;
+}
+.btn
+{
+    color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: #fff solid .1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 15rem;
+    padding: 1.5rem;
+    font-weight: 300;
+}
+.btn1:hover
+{
+    background-color: yellow;
+    border: none;
+    color: #fff;
+}
+.btn2:hover
+{
+    background-color: blueviolet;
+    border: none;
+    color: #fff;
+}
+.split.left,
+.split.right,
+.split.left::before,
+.split.right::after
+{
+    transition: all .7s ease-in-out;
+}
+
+
+/* Now Add Classes */
+.hover-left .left
+{
+    width: 75%;
+}
+.hover-left .right
+{
+    width: 25%;
+}
+
+
+.hover-right .right
+{
+    width: 75%;
+}
+.hover-right .left
+{
+    width: 25%;
+}
+
+.nunu {
+
+    position: relative; 
+    top: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+    
+}
+
+.sifu {
+
+    left: 150px;
+    position:relative; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: purple;
+}
+
+.sifuMe {
+
+
+    font-size: 40px;
+    color: yellow;
+}
+
+.baccGround {
+    background: url('/assets/sonia-dauer-x0Hqtz2Jr48-unsplash.jpg') center/ cover no-repeat;
+    
+}
+
+.baccGround2 {
+
+    background: url('/assets/quinten-de-graaf-qeD4yIrH8Gw-unsplash.jpg') center/ cover no-repeat;
+}
+
+.newTxtColor {
+
+
+    color: yellow;
+}
+
+footer{
+	background-color:purple;
+
+	/* border-top:solid 5px hsla(46, 87%, 54%, 0.705); */
+
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 40px;
+    background: grey;
+}
+
+footer *{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer > blockquote{
+	background-color: hsla(46, 87%, 54%, 0.705);
+	/* padding: 10px; */
+	/* max-width: 700px; */
+    /* margin: 5vh auto 5vh auto; */
+    /* border: solid hsla(46, 87%, 60%); */
+	border-radius: 100px;
+	color: yellow;
+	/* line-height: 1.3; */
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  body {
+    background-color: wheat;
+  }
+  
+  #title {
+    font-size: 2.6em;
+    text-align: center;
+    font-family: Overpass, Segoe UI;
+    margin: auto;
+    margin-top: 2px;
+  }
+  
+  #Kobe-title {
+    background-color: white;
+    width: 55%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    top: 10px;
+    border-style: solid;
+    border-color: purple ;
+  }
+  
+  .second {
+    position: relative;
+    top: 2px;
+    text-align: center;
+    opacity: 0.8;
+    font-family: "Asap Condensed";
+    font-size:1.5em;
+  }
+  
+  img {
+    max-width: 70%;
+    width: 42%;
+    height: 50%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 30px;
+  }
+  
+  #img-caption {
+    position: relative;
+    top: 35px;
+    text-align: center;
+    font-family: Galdeano;
+    font-size: 1.2em;
+  }
+  
+  .third {
+    font-family: "Share Tech Mono";
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: 1.48em;
+  }
+  
+  .fourth {
+    font-family: "Share Tech Mono";
+    position: relative;
+    top: 27.5px;
+    font-size: 1.5em;
+    opacity: 0.8;
+    text-align: center;
+  }
+
+ .card-img-top {
+
+
+    width: 200px;
+    height: 215px;
+ }
+
+ .timeline1 {
+    background-color: rgb(270, 240, 200);
+    width: 40%;
+    height: 100px;
+    margin-left: 8%;
+    border-radius: 30px;
+    border-width: 2.99px;
+    border-style: solid;
+    text-align: center;
+    font-family: "Asap Condensed";
+    display:flex; 
+    align-items:center;
+    justify-content:center; 
+    font-size: 1.25em; 
+  }
+  
+  .timeline2 {
+    margin-left: 51%;
+    margin-top: -3%;
+  }
+  
